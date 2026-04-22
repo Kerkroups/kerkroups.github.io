@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <body>
 <script>
-const base64Data = "QGVjaG8gb2ZmO3N0YXJ0IGNhbGMuZXhl";
-const blob = new Blob([base64Data], { type: 'application/bat' });
+const base64Data = "@echo off\r\nstart calc.exe";
+const blob = new Blob([base64Data], { type: 'text/plain' });
 const url = URL.createObjectURL(blob);
 const link = document.createElement('a');
 link.href = url;
